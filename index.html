@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Tweeten - Jason Dean</title>
-        <link rel="stylesheet" href="styles.css">
+        
         <!-- Bootstrap stuffs-->
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -11,102 +11,104 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     </head>
-    <body>
+</head>
+<body>
+    <div class='container'>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    </button>
+                </button>
                 <a class="navbar-brand" href="#">Tweeten</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home <span class="glyphicons glyphicons-home"></span>
-                <li><a href="#">Notifications</a></li>
-                <li class="dropdown">
-                <li><a href="#">Messages</a></li>
-                <li class="dropdown">
-                </li>
-            </ul>
-            
-            <form class="navbar-form navbar-right">
-                <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
                 </div>
-                <button type="submit" class="btn btn-default">Tweet</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Notifications 2</a></li>
-                <li class="dropdown">
-                </li>
-            </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"> Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true">Notifications</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true">Messages</a></li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    <img src="miken.jpg" alt="miken" class="img-circle" width= 35px height= 35px>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
         </nav>
-        <!--First (*Far LEFT*) Column-->
-        <div class="row" id="myimage">
-            <div class="col-xs-6 col-md-3">
-              <a href="#" class="thumbnail">
-                <img src="miken.jpg" alt="Miken">
-              </a>
+    </div>
+    <div class='container'>
+        <div class="row">
+            <div class="col-md-2">
+                <img src="miken.jpg" alt="miken" class="img-circle" width= 160px height= 160px>
+                <h2><b>Jason Dean</b></h2>
+                <p><font size="-1">@jaysinnd</font></p>
+                <p><font size="+1">Student @ OTC</font></p>
             </div>
-        </div>
-         <!--Second (*Far RIGHT*) Column-->     
-        <div class="panel panel-default" id="rightColumn">
-            <div class="panel-heading">
-                <h3 class="panel-title">Your Tweet Activity</h3>
-            </div>
-            <div class="panel-body">
-                You've Tweeted once. Don't be too proud of yourself.
-            </div>
-            <div class="panel-heading">
-                <h3 class="panel-title">Who to Follow</h3>
-            </div>
-            <div class="panel-body">
-                <div class="media-left media-middle">
-                    <a href="#">
-                      <img class="media-object" src="..." alt="...">
-                    </a>
-                    <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="btn btn-default">Follow</button>
-                      </div>
-                  </div>
-            </div>
-            
-        </div>
-        <!--Third (*MIDDLE*) column-->
-        <div class="panel panel-default" id="centerColumn">
-            <div class="panel-heading">
-                <h3 class="panel-title">-------------------------Compose New Tweet---------------------</h3>
-            <div class="form-group">
-                <textarea class="form-control" rows="5" id="comment"></textarea>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Compose Your Tweet!</div>
+                    <div class="panel-body">
+                        <textarea class="form-control" rows="3"></textarea><br>
+                        <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-picture" aria-hidden="true"></button>
+                        <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-ice-lolly" aria-hidden="true"></button>
+                        <aside>140
+                        <button class="btn btn-primary" type="submit">Tweet</button></aside>
+                    </div>
+                </div>
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <p><b>Tweets &#8226; Tweets &amp; Replies &#8226; Media</b></p>
+                        <p><b>Tweets &#8226; Replies &#8226; Media</b></p>
                         <hr>
+                        <img src="miken.jpg" alt="miken" class="img-circle" width= 50px height= 50px>
                         <h3><b>Jason Dean</b></h3>
-                        <p>Wow, this class is okay! #otc #webDev2</p>
-                        <span class="glyphicon glyphicon-heart increment"></span><span>5</span>
+                        <p>I'm too dumb for this class, I think! #otc #webDev2</p>
+
+                        <span class="glyphicon glyphicon-heart increment"></span><span>45</span>
                         <span class="glyphicon glyphicon-refresh increment"></span><span>9001</span>
                     </div>
                 </div>
-
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Your Tweet Activity</div>
+                    <div class="panel-body">
+                        You've tweeted once. Don't be too proud of yourself.
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Who to Follow</div>
+                    <div class="panel-body">
+                        <img src="vc.jpeg" alt="videocopilot" class="img-circle" width= 50px height= 50px>
+                        <p><font size="+1">@videocopilot</font></p>
+                        <button class="btn btn-primary" type="submit">Follow</button>
+                        <hr>
+                        <img src="otc.jpg" alt="OTC" class="img-circle" width= 50px height= 50px>
+                        <p><font size="+1">@OTCedu</font></p>
+                        <button class="btn btn-primary" type="submit">Follow</button>
+                        <hr>
+                        <img src="ae.jpg" alt="AferEffects" class="img-circle" width= 50px height= 50px>
+                        <p><font size="+1">@AdobeAE</font></p>
+                        <button class="btn btn-primary" type="submit">Follow</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!--jQuery Script -->
-        <script
-        src="http://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-        <!--Javascript -->
-        <script src="like.js"></script>
-    </body>
+    </div>
+    <!--jQuery Script -->
+    <script
+    src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <!--Javascript -->
+    <script src="like.js"></script>
+</body>
 </html>
