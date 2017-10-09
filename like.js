@@ -14,3 +14,10 @@ $(function(){
     })
 });
 
+$(function(){
+    $('.tweetsub').click(event => {
+        let currentTweet = $(event.target).text('.tweettext')
+        let newTweet = $(event.target).text('.')
+    })
+})
+
