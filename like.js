@@ -15,9 +15,17 @@ $(function(){
 });
 
 $(function(){
-    $('.tweetsub').click(event => {
-        let currentTweet = $(event.target).text('.tweettext')
-        let newTweet = $(event.target).text('.')
+    $('#newtweet').submit(function (e) {
+        e.preventDefault()
+        let newTweet = $("[name=title]", $(this))
+        let newTweeten = newTweet.val()
+
+        if (newTweet.trim() == '') return
+
+        let newElement = $(":last-child", $("#tweets")).clone()
+        newElement.text(newTweet)
+        
+
     })
 })
 
