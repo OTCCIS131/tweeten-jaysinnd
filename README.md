@@ -13,3 +13,9 @@ Prior Javascript to make buttons work WITHOUT jQuery -
 // })
 
 -----------------------------------------------
+Vue stuff
+
+v-on.click = "jse"
+v-bind:src = "jse"
+v-model = ""
+v-for = "var in vars"

@@ -9,13 +9,7 @@
 //     })
 // })
 
-//Add 'likes' to the count. *NOTE* Changed some things to make new tweets work
-//because they were not working no matter what I did, or where I put it in the order.
-// I even tried putting inside the code for new tweets so that it would also be
-// tied to the new(but same) elements that were being injected as tweets. That kind of
-// worked, but it would parse the number, and then add 2, since there were 2 elements now-
-// just a guess on that, since I had two tweets when testing. so, +1 and +1.. adding both 
-// to each count. I could be way off though. You are the expert. #derp
+
 
 //New jquery code for adding likes to tweets. Revised to work with all new tweets
 $(function(){
@@ -68,8 +62,7 @@ $('.tweetsub').click(function(event){
                 "</div></div>")
 
     $(".newest").val("")
-    //code to change the 'Your Tweet Activity' element just ....
-    // cuz I got in a good rythm and figure, hey, why stop...
+    //code to change the 'Your Tweet Activity' element just ..
     // doesnt quite work the way I want it to tho!
     $('#activetweet').replaceWith(newTweet).prepend(postDate)
     
@@ -81,7 +74,6 @@ $('.follow').click(function(){
         return text === "Follow" ? "Following" : "Follow"
     })
     $(this).css('color', 'grey')
-    //Thanks, jquery and stack overflow ;)
 
 })
 
